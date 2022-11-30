@@ -18,7 +18,7 @@ const posts = [
       { type: 'paragraphy', content: 'Acabei de subir mais um projeto no meu portifa. E um projeto que... '},
       { type: 'link', content: 'jane.design/doctorcare' }
     ],
-    publishedAt: new Date('2022-11-29 20:00:00')
+    publishedAt: new Date('2022-11-29 20:00:00'),
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ const posts = [
       { type: 'paragraphy', content: 'Acabei de subir mais um projeto no meu portifa. E um projeto que... '},
       { type: 'link', content: 'jane.design/doctorcare' }
     ],
-    publishedAt: new Date('2022-11-28 20:00:00')
+    publishedAt: new Date('2022-11-28 20:00:00'),
   }
 ]
 
@@ -50,7 +50,7 @@ function App() {
               <Post 
                 author={post.author}
                 content={post.content}
-                publishedAt={post.published}
+                publishedAt={post.publishedAt}
               />
             )
           })}
